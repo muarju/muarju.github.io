@@ -1,0 +1,636 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>FS-May21-M2D8</title>
+    <style>
+        .ex4 h2 span{
+            font-size: 26px;
+            font-weight: 400;
+        }
+        table {
+        border-collapse: separate;
+        border-spacing: 0;
+        height:400px;
+        
+        }
+        table td{
+            border: 2px solid #000; 
+            padding: 10px;
+        }
+        
+        /* top-left border-radius */
+        table tr:first-child td:first-child {
+        border-top-left-radius: 30px;
+        border: 2px solid #000;
+        }
+
+        /* top-right border-radius */
+        table tr:first-child td:last-child {
+        border: 2px solid #000;
+        border-top-right-radius: 30px;
+        border-bottom: none;
+        }
+
+        /* bottom-left border-radius */
+        table tr:first-child td:first-child {
+            border-bottom-left-radius: 30px;
+            border: 2px solid #000;
+
+        }
+        table tr:nth-child(2) td:nth-child(2){
+            border-top: none;
+            border-bottom: none;
+        }
+        /* bottom-right border-radius */
+        table tr:last-child td:last-child {
+        border-bottom-right-radius: 30px;
+        border: 2px solid #000;
+        border-top: none;
+        }
+        footer a{color: #000;}
+    </style>
+  </head>
+  <body>
+    <header class="row-fluid bg-primary">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+        </div>
+    </header>
+    <section class="ex1 mb-5">
+       <div class="container">
+           <div class="row">
+               <div class="col">
+                <h1 class="text-center mt-5">Exercise 1</h1>
+                <p class="text-center">Ricreate this table just using Bootstrap4 classes or styling, without adding / removing any DOM element</p>
+                <table class="ex1table w-100 text-center">
+                    <tr>
+                        <td class="bg-success text-white w-50" rowspan="3">First Column <br> Height 400px; <br> Green-ish Background <br> Text Centered</td>
+                        <td class="bg-primary text-left text-white font-weight-bold align-bottom" rowspan="3" style="width: 20%;">Second column <br> Text To the bottom <br> Bold, Blueish<br>Background</td>
+                        <td class="" style="background-color:hsl(53deg 100% 87%); width: 30%;">Third Column Part 1</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: hsl(53deg 100% 71%);">Third Column Part 1</td>
+                    </tr>
+                    <tr>
+                        <td style="background-color: hsl(53deg 100% 56%);">Third Column Part 3</td>
+                    </tr>
+                </table>
+               </div>
+           </div>
+       </div>
+    </section>
+    <section class="ex2 mb-5">
+        <div class="container">
+            <div class="row">
+               <div class="col">
+                <h1 class="text-center">Exercise 2</h1>
+                <p class="text-center">Create a pricing table to sell your product! Classical, 3 card approach with 3<br> price. this is a classical user/priced product, with new feature enabled for the <br>pro/enterprise version</p>
+              
+                <div class="row">
+                    <div class="col-4">
+                        <div class="card text-center">
+                            <div class="card-header">
+                             <h5>Free</h5>
+                            </div>
+                            <div class="card-body ">
+                              <h5 class="card-title"><span style="font-size: 30px;">€0</span> / mo</h5>
+                              <ul class="list-unstyled">
+                                  <li>10 users included</li>
+                                  <li>2GB of Storage</li>
+                                  <li>Email Support</li>
+                                  <li>Help center access</li>
+                              </ul>
+                              <button type="button" class="btn btn-outline-primary btn-block">Sign up for free</button>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-center">
+                            <div class="card-header">
+                             <h5>Pro</h5>
+                            </div>
+                            <div class="card-body ">
+                              <h5 class="card-title"><span style="font-size: 30px;">€15</span> / mo</h5>
+                              <ul class="list-unstyled">
+                                  <li>20 users included</li>
+                                  <li>10 GB of Storage</li>
+                                  <li>Priority Email Support</li>
+                                  <li>Help center access</li>
+                              </ul>
+                              <button type="button" class="btn btn-primary btn-block">Get Started</button>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-4">
+                        <div class="card text-center">
+                            <div class="card-header">
+                             <h5>Enterprise</h5>
+                            </div>
+                            <div class="card-body ">
+                              <h5 class="card-title"><span style="font-size: 30px;">€29</span> / mo</h5>
+                              <ul class="list-unstyled">
+                                  <li>30 users included</li>
+                                  <li>15 GB of Storage</li>
+                                  <li>Phone and Email Support</li>
+                                  <li>Help center access</li>
+                              </ul>
+                              <button type="button" class="btn btn-primary btn-block">Contact us</button>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="ex3 mb-5">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-12">
+                    <h1>Exercise 3</h1>
+                    <p>And this could be the "Video" part of your website! Here you can add all the video content, displayed inside cards</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/300/200?random=1" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option1" autocomplete="off"> View
+                                </label>
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> Edit
+                                </label>
+                              </div>
+                          <small class="text-muted float-right">3 mins ago</small>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/300/200?random=2" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option1" autocomplete="off"> View
+                                </label>
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> Edit
+                                </label>
+                              </div>
+                          <small class="text-muted float-right">3 mins ago</small>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/300/200?random=3" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option1" autocomplete="off"> View
+                                </label>
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> Edit
+                                </label>
+                              </div>
+                          <small class="text-muted float-right">3 mins ago</small>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/300/200?random=4" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option1" autocomplete="off"> View
+                                </label>
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> Edit
+                                </label>
+                              </div>
+                          <small class="text-muted float-right">3 mins ago</small>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/300/200?random=5" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option1" autocomplete="off"> View
+                                </label>
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> Edit
+                                </label>
+                              </div>
+                          <small class="text-muted float-right">3 mins ago</small>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/300/200?random=6" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option1" autocomplete="off"> View
+                                </label>
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> Edit
+                                </label>
+                              </div>
+                          <small class="text-muted float-right">3 mins ago</small>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/300/200?random=7" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option1" autocomplete="off"> View
+                                </label>
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> Edit
+                                </label>
+                              </div>
+                          <small class="text-muted float-right">3 mins ago</small>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/300/200?random=8" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option1" autocomplete="off"> View
+                                </label>
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> Edit
+                                </label>
+                              </div>
+                          <small class="text-muted float-right">3 mins ago</small>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/300/200?random=9" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option1" autocomplete="off"> View
+                                </label>
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> Edit
+                                </label>
+                              </div>
+                          <small class="text-muted float-right">3 mins ago</small>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/300/200?random=10" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option1" autocomplete="off"> View
+                                </label>
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> Edit
+                                </label>
+                              </div>
+                          <small class="text-muted float-right">3 mins ago</small>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/300/200?random=11" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option1" autocomplete="off"> View
+                                </label>
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> Edit
+                                </label>
+                              </div>
+                          <small class="text-muted float-right">3 mins ago</small>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/300/200?random=12" alt="Card image cap">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer bg-white">
+                            <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option1" autocomplete="off"> View
+                                </label>
+                                <label class="btn btn-outline-secondary btn-sm">
+                                  <input type="radio" name="options" id="option3" autocomplete="off"> Edit
+                                </label>
+                              </div>
+                          <small class="text-muted float-right">3 mins ago</small>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="ex4">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center">Exercise 4</h1>
+                    <p class="text-center">Structure this section as a blog! check the image and recreate as best as you can!</p>    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <h2>Page Heading <span>Secondary Text</span></h2>
+                    <div class="card mb-3">
+                        <img src="https://picsum.photos/750/300" class="card-img-top" alt="...">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Post Title</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non
+                                    convallis risus.
+                                    Aenean a tortor scelerisque, fermentum libero et, sagittis purus. Cras imperdiet orci
+                                    risus, at
+                                    semper arcu porttitor in. </p>
+                                <a href="#" class="btn btn-primary">Read More -> </a>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Posted on January 10, 2020 by <a class="text-decoration-none"
+                                        href="#">Admin</a></small>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="card mb-3">
+                        <img src="https://picsum.photos/750/300" class="card-img-top" alt="...">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Post Title</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non
+                                    convallis risus.
+                                    Aenean a tortor scelerisque, fermentum libero et, sagittis purus. Cras imperdiet orci
+                                    risus, at
+                                    semper arcu porttitor in.</p>
+                                <a href="#" class="btn btn-primary">Read More -> </a>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Posted on January 12, 2020 by <a class="text-decoration-none"
+                                        href="#">Admin</a></small>
+                            </div>
+    
+                        </div>
+                    </div>
+    
+    
+                    <div class="card mb-3">
+                        <img src="https://picsum.photos/750/300" class="card-img-top" alt="...">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Post Title</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non
+                                    convallis risus.
+                                    Aenean a tortor scelerisque, fermentum libero et, sagittis purus. Cras imperdiet orci
+                                    risus, at
+                                    semper arcu porttitor in.</p>
+                                <a href="#" class="btn btn-primary">Read More -> </a>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-muted">Posted on January 1, 2020 by <a class="text-decoration-none"
+                                        href="#">Admin</a></small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <nav aria-label="Page navigation example">
+                        <ul class="pagination">
+                          <li class="page-item"><a class="page-link" href="#"> <- Oldest</a></li>
+                         
+                          <li class="page-item"><a class="page-link" href="#">Newest -></a></li>
+                        </ul>
+                      </nav>
+                </div>
+                <div class="col-4">
+                    <div class="card mb-4">
+                        <div class="card-header">
+                         <h4>Find in my Blog</h4>
+                        </div>
+                        <div class="card-body">
+                            <form class="form-inline my-1 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search"
+                                    aria-label="Search">
+                                <button class="btn btn-dark my-2 my-sm-0 input-group-append" type="submit">Search</button>
+                            </form>
+                        </div>
+                       
+                      </div>
+                      <div class="card mb-4">
+                        <div class="card-header">
+                         <h4>Categories</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#!">Web Design</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">HTML</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">CSS</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a href="#!">JavaScript</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">SASS</a>
+                                        </li>
+                                        <li>
+                                            <a href="#!">Bootstrap4</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                       
+                      </div>
+                      <div class="card mb-4">
+                        <div class="card-header">
+                         <h4>Widgets</h4>
+                        </div>
+                        <div class="card-body">
+                            <p>Usually here you can put all your custom widget to enhanche the user experience</p>
+                        </div>
+                       
+                      </div>
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="ex5">
+        <footer>
+          <div class="container">
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <h1>Exercise 5</h1>
+                    <p>Footer time! Never understimate the power of footer ;-)</p>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-4">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled taxt-drak">
+                        <li>
+                            <a href="#!">Cool Stuff</a>
+                        </li>
+                        <li>
+                            <a href="#!">Random Feature</a>
+                        </li>
+                        <li>
+                            <a href="#!">Team feature</a>
+                        </li>
+                        <li>
+                            <a href="#!">Stuff for developers</a>
+                        </li>
+                        <li>
+                            <a href="#!">Another one</a>
+                        </li>
+                        <li>
+                            <a href="#!">Last time</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h5>Rescourses</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Resource</a>
+                        </li>
+                        <li>
+                            <a href="#!">Resource name</a>
+                        </li>
+                        <li>
+                            <a href="#!">another resource</a>
+                        </li>
+                        <li>
+                            <a href="#!">Final resource</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-4">
+                    <h5>About</h5>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#!">Team</a>
+                        </li>
+                        <li>
+                            <a href="#!">Locations</a>
+                        </li>
+                        <li>
+                            <a href="#!">Privacy</a>
+                        </li>
+                        <li>
+                            <a href="#!">Terms</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+   
+  </body>
+</html>
