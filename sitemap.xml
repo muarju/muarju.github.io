@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://muarju.github.io/cv.pdf</loc>
+    <lastmod>2021-06-09</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://muarju.github.io/images/works/1.svg</loc>
+    <lastmod>2021-06-09</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://muarju.github.io/index.html</loc>
+    <lastmod>2021-06-09</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://muarju.github.io</loc>
+    <lastmod>2021-06-09</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://muarju.github.io/images/works/4.svg</loc>
+    <lastmod>2021-06-09</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://muarju.github.io/images/works/5.svg</loc>
+    <lastmod>2021-06-09</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+  <url>
+    <loc>https://muarju.github.io/</loc>
+    <lastmod>2021-06-09</lastmod>
+    <changefreq>daily</changefreq>
+  </url>
+</urlset>
